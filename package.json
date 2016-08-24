@@ -1,0 +1,32 @@
+{
+  "name": "spawn",
+  "version": "0.0.1",
+  "description": "A Node package for spawning random data.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "lib/index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrtnq514/spawn.git"
+  },
+  "keywords": [
+    "spawn",
+    "generate",
+    "random",
+    "generator",
+    "mock",
+    "tool"
+  ],
+  "author": "jrtnq514",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrtnq514/spawn/issues"
+  },
+  "homepage": "https://github.com/jrtnq514/spawn#readme"
+}
