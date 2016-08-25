@@ -10,5 +10,12 @@ script:
   - npm test
   - npm run coverage
 
+notifications:
+  email:
+    recipients:
+      - burggamer.jt@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
+
 # Send coverage data to Coveralls
 after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
