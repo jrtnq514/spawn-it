@@ -28,6 +28,3 @@ describe('SPAWN', function () {
     });
 });
 
-var spawnInt = spawn.number.int;
-
-console.log(spawnInt.between(0,14));
