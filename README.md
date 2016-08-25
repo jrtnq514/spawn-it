@@ -55,3 +55,10 @@ var test = {
     ```javascript
     spawn.string.names.firstName(gender)
     ```
+    
+###Contributors
+[Josh Taylor](https://github.com/jrtnq514)  
+[Nathan Francy](https://github.com/nathanfrancy)  
+
+###License
+[MIT](https://github.com/jrtnq514/spawn-it/blob/master/LICENSE)
