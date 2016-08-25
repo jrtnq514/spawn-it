@@ -1,6 +1,6 @@
 # spawn-it
-[![Build Status](https://travis-ci.org/jrtnq514/spawn.svg?branch=master)](https://travis-ci.org/jrtnq514/spawn)
-[![Coverage Status](https://coveralls.io/repos/github/jrtnq514/spawn/badge.svg?branch=master)](https://coveralls.io/github/jrtnq514/spawn?branch=master)
+[![Build Status](https://travis-ci.org/jrtnq514/spawn-it.svg?branch=master)](https://travis-ci.org/jrtnq514/spawn-it)
+[![Coverage Status](https://coveralls.io/repos/github/jrtnq514/spawn-it/badge.svg?branch=master)](https://coveralls.io/github/jrtnq514/spawn-it?branch=master)
 
 [Spawn-it](https://github.com/jrtnq514/spawn-it) is a node package for spawning random data.
 
