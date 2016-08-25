@@ -1,5 +1,5 @@
 {
-  "name": "spawn",
+  "name": "spawn-it",
   "version": "0.0.1",
   "description": "A Node package for spawning random data.",
   "main": "lib/index.js",
@@ -17,10 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jrtnq514/spawn.git"
+    "url": "git+https://github.com/jrtnq514/spawn-it.git"
   },
   "keywords": [
     "spawn",
+    "spawn-it",
     "generate",
     "random",
     "generator",
@@ -30,9 +31,9 @@
   "author": "jrtnq514",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jrtnq514/spawn/issues"
+    "url": "https://github.com/jrtnq514/spawn-it/issues"
   },
-  "homepage": "https://github.com/jrtnq514/spawn#readme",
+  "homepage": "https://github.com/jrtnq514/spawn-it#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.12",
