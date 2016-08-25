@@ -16,12 +16,14 @@ describe('SPAWN', function () {
 
     it('should have the property number', function (done) {
         spawn.should.have.deep.property('number');
+        spawn.should.have.deep.property('number.int');
+        spawn.should.have.deep.property('number.decimal');
         done();
     });
 
     it('should have the property string', function (done) {
         spawn.should.have.deep.property('string');
+        spawn.should.have.deep.property('string.names');
         done();
     });
 });
-
