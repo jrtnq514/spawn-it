@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "description": "A Node package for spawning random data.",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
     "start": "lib/index.js",
-    "test": "mocha",
+    "test": "mocha -R spec",
     "coverage": "istanbul cover node_modules/.bin/_mocha -- -R spec"
   },
   "repository": {
