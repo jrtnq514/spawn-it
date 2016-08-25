@@ -14,6 +14,7 @@ describe('NUMBER', function () {
                 let min = 0;
                 let max = 1000;
                 let result = number.int.between(min, max);
+                
                 result.should.be.a('number');
                 result.should.be.within(min, max);
                 done();
@@ -24,6 +25,7 @@ describe('NUMBER', function () {
             it('should return an int of the length entered', function (done) {
                 let length = 9;
                 let result = number.int.ofLength(length);
+                
                 result.should.be.a('number');
                 result.toString().length.should.equal(length);
                 done();
