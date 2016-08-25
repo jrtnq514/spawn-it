@@ -28,3 +28,10 @@ describe('SPAWN', function () {
     });
 });
 
+console.log(spawn.boolean.simple());
+console.log(spawn.boolean.array(5));
+console.log(spawn.boolean.coinFlip());
+
+
+
+
