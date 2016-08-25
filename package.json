@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "lib/index.js",
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,10 @@
   "bugs": {
     "url": "https://github.com/jrtnq514/spawn/issues"
   },
-  "homepage": "https://github.com/jrtnq514/spawn#readme"
+  "homepage": "https://github.com/jrtnq514/spawn#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  }
 }
