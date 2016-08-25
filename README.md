@@ -55,6 +55,23 @@ var test = {
     ```javascript
     spawn.string.names.firstName(gender)
     ```
+* Boolean
+  * simple
+  ```javascript
+  spawn.boolean.simple()
+  ```
+  * array
+  ```javascript
+  spawn.boolean.array(length)
+  ```
+  * coin flip
+  ```javascript
+  spawn.boolean.coinFlip()
+  ```
+  * bit
+  ```javascript
+  spawn.boolean.bit()
+  ```
     
 ###Contributors
 [Josh Taylor](https://github.com/jrtnq514)  
