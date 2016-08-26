@@ -56,7 +56,7 @@ describe('STRING', function () {
             });
 
             it('should not return null or undefined female name', function (done) {
-                let result = string.names.firstName('male');
+                let result = string.names.firstName('female');
                 let indexOfFemaleName = stringConfig.female.indexOf(result.toUpperCase());
 
                 result.should.be.a('string');
