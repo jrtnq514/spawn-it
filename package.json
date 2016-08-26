@@ -26,7 +26,17 @@
     "random",
     "generator",
     "mock",
-    "tool"
+    "tool",
+    "name",
+    "string",
+    "date",
+    "boolean",
+    "sandbox",
+    "dummy",
+    "data",
+    "test",
+    "fake",
+    "prototype"
   ],
   "author": "jrtnq514",
   "license": "MIT",
