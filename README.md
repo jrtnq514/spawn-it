@@ -18,12 +18,13 @@ $ npm install spawn-it
 var spawn = require('spawn-it');
 
 var studentFirstName = spawn.string.names.firstName('male');
+var studentLastName = spawn.string.names.lastName();
 var gradePercentage = spawn.number.int.between(0, 100);
 
 var test = {
   student: {
     firstName: studentFirstName,
-    lastName: 'Smith'
+    lastName: studentLastName
   },
   percentage: gradePercentage
 };
