@@ -39,5 +39,8 @@
     "coveralls": "^2.11.12",
     "istanbul": "^0.4.5",
     "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "moment": "^2.14.1"
   }
 }
