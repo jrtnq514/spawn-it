@@ -66,7 +66,7 @@ describe('STRING', function () {
             });
 
             it('should return name from original female list', function (done) {
-                let result = string.names.firstName('male');
+                let result = string.names.firstName('female');
                 let indexOfFemaleName = stringConfig.female.indexOf(result.toUpperCase());
 
                 indexOfFemaleName.should.not.equal(-1);
