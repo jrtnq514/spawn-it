@@ -30,6 +30,66 @@ var test = {
 ```
 
 ###Spawnable Data
+* Boolean
+  * simple
+  ```javascript
+  spawn.boolean.simple()
+  ```
+  * array
+  ```javascript
+  spawn.boolean.array(length)
+  ```
+  * coin flip
+  ```javascript
+  spawn.boolean.coinFlip()
+  ```
+  * bit
+  ```javascript
+  spawn.boolean.bit()
+  ```
+* Date
+  * weekday
+    * name
+    ```javascript
+    spawn.date.weekday.name()
+    ```
+    * abbr
+    ```javascript
+    spawn.date.weekday.abbr()
+    ```
+    * number
+    ```javascript
+    spawn.date.weekday.number()
+    ```
+    * allNames
+    ```javascript
+    spawn.date.weekday.allNames()
+    ```
+    * allAbbr
+    ```javascript
+    spawn.date.weekday.allAbbr()
+    ```
+  * month
+    * name
+    ```javascript
+    spawn.date.month.name()
+    ```
+    * abbr
+    ```javascript
+    spawn.date.month.abbr()
+    ```
+    * number
+    ```javascript
+    spawn.date.month.number()
+    ```
+    * allNames
+    ```javascript
+    spawn.date.month.allNames()
+    ```
+    * allAbbr
+    ```javascript
+    spawn.date.month.allAbbr()
+    ```
 * Number
   * int
     * between 
@@ -55,23 +115,6 @@ var test = {
     ```javascript
     spawn.string.names.firstName(gender)
     ```
-* Boolean
-  * simple
-  ```javascript
-  spawn.boolean.simple()
-  ```
-  * array
-  ```javascript
-  spawn.boolean.array(length)
-  ```
-  * coin flip
-  ```javascript
-  spawn.boolean.coinFlip()
-  ```
-  * bit
-  ```javascript
-  spawn.boolean.bit()
-  ```
     
 ###Contributors
 [Josh Taylor](https://github.com/jrtnq514)  
