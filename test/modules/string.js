@@ -105,5 +105,25 @@ describe('STRING', function () {
 
         });
 
+        describe('lastName', function() {
+
+            it('should not return null or undefined', function(done) {
+                let result = string.names.lastName();
+
+                result.should.not.equal(null);
+                result.should.not.equal(undefined);
+                done();
+            });
+
+            it('should return a name from the last name list', function(done) {
+                let result = string.names.lastName();
+                let indexName = stringConfig.last.indexOf(result.toUpperCase());
+
+                indexName.should.not.equal(-1);
+                done();
+            });
+
+        });
+
     });
 });
