@@ -87,6 +87,26 @@ describe('NUMBER', function () {
                 }
                 done();
             });
+
+            it('should return an error due to the range', function (done) {
+                let length = 9;
+                let min = numberConfig.minInt;
+                let max = numberConfig.maxInt;
+                let array;
+
+                number.int.array.bind(array, length, min, max).should.throw('min and max must be from ' + (numberConfig.minInt + 1) + ' and ' + (numberConfig.maxInt - 1));
+                done();
+            });
+
+            it('should return an error due to max being less than min', function (done) {
+                let length = 9;
+                let min = 10;
+                let max = -10;
+                let array;
+
+                number.int.array.bind(array, length, min, max).should.throw('max must be greater than min');
+                done();
+            });
         });
     });
 
