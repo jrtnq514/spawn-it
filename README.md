@@ -153,6 +153,12 @@ var myRandomInt = spawnNumber.int.between(-10, 10);
     ```javascript
     spawn.string.names.lastName()
     ```
+* Text
+  * utility 
+    * capitalizeFirst
+    ```javascript
+    spawn.text.utility.capitalizeFirst(string[, toLowerBefore)
+    ```
     
 ###Contributors
 [Josh Taylor](https://github.com/jrtnq514)  
