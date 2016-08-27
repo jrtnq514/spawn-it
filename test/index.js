@@ -21,9 +21,9 @@ describe('SPAWN', function () {
         done();
     });
 
-    it('should have the property string', function (done) {
-        spawn.should.have.deep.property('string');
-        spawn.should.have.deep.property('string.utility');
+    it('should have the property text', function (done) {
+        spawn.should.have.deep.property('text');
+        spawn.should.have.deep.property('text.utility');
         done();
     });
 
