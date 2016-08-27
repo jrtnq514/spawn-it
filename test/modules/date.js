@@ -126,7 +126,7 @@ describe('DATE', function () {
     describe('year', function () {
         describe('full', function () {
             it('should return a year between 1900 and the current year', function (done) {
-                let currentYear = moment().format('YYYY');
+                let currentYear = moment().get('year');
                 let result = date.year.full();
 
                 result.should.be.a('number');
