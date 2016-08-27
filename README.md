@@ -143,7 +143,7 @@ var myRandomInt = spawnNumber.int.between(-10, 10);
     ```javascript
     spawn.number.decimal.ofLength(length, precision[, toString])
     ```
-* String
+* Person
   * names 
     * first name
     ```javascript
