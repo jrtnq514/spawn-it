@@ -148,6 +148,32 @@ describe('PERSON', function () {
 
         });
 
+        describe('age', function() {
+
+            it('should return an age between the given min and max', function(done) {
+                let min = 16;
+                let max = 65;
+                let result = person.attributes.age(min, max);
+
+                result.should.not.equal(null);
+                result.should.not.equal(undefined);
+                result.should.be.a('number');
+                result.should.be.within(min, max);
+                done();
+            });
+
+            it('should return an age between 1 and 110', function(done) {
+                let result = person.attributes.age();
+
+                result.should.not.equal(null);
+                result.should.not.equal(undefined);
+                result.should.be.a('number');
+                result.should.be.within(1, 110);
+                done();
+            });
+
+        });
+
     });
 
 });
