@@ -23,8 +23,27 @@ describe('SPAWN', function () {
 
     it('should have the property string', function (done) {
         spawn.should.have.deep.property('string');
-        spawn.should.have.deep.property('string.names');
         spawn.should.have.deep.property('string.utility');
+        done();
+    });
+
+    it('should have the property boolean', function (done) {
+        spawn.should.have.deep.property('boolean');
+        done();
+    });
+
+    it('should have the property date', function (done) {
+        spawn.should.have.deep.property('date');
+        spawn.should.have.deep.property('date.weekday');
+        spawn.should.have.deep.property('date.month');
+        spawn.should.have.deep.property('date.year');
+        spawn.should.have.deep.property('date.decade');
+        done();
+    });
+
+    it('should have the property person', function (done) {
+        spawn.should.have.deep.property('person');
+        spawn.should.have.deep.property('person.names');
         done();
     });
 });
