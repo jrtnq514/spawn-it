@@ -137,7 +137,7 @@ describe('DATE', function () {
             it('should return a year between the provided min and max', function (done) {
                 let min = 1800;
                 let max = 2017;
-                let result = date.year.full();
+                let result = date.year.full(min, max);
 
                 result.should.be.a('number');
                 result.should.be.within(min, max);
@@ -145,7 +145,7 @@ describe('DATE', function () {
             });
         });
 
-        describe('full', function () {
+        describe('short', function () {
             it('should return the last two digits of a year (00 - 99)', function (done) {
                 let result = date.year.short();
                 
@@ -159,9 +159,13 @@ describe('DATE', function () {
     describe('decade', function () {
         describe('full', function () {
             it('should return the full year value of a decade', function(done) {
-                let result = date.decade.full();
+                let result;
 
-                result.should.be.a('string');
+                for (var i = 0; i < 10; i++) {
+                    result = date.decade.full();
+                    result.should.be.a('string');
+                }
+
                 done();
             });
         });

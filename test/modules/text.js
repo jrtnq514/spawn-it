@@ -59,6 +59,12 @@ describe('TEXT', function () {
                     done();
                 });
 
+                it('should change the string to lowercase and capitalize the first character', function(done) {
+                    var result = text.utility.capitalize('naThAn', true);
+                    expect(result).to.equal('Nathan');
+                    done();
+                });
+
             });
 
         });

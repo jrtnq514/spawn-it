@@ -106,6 +106,26 @@ describe('PERSON', function () {
 
             });
 
+            describe('mis-spelled gender', function() {
+
+                it('should return a name even if passed in gender is mis-spelled if its >= 4 and starts with the correct letter', function (done) {
+                    let result = person.names.firstName('mael');
+
+                    result.should.not.equal(null);
+                    result.should.not.equal(undefined);
+                    done();
+                });
+
+                it('should return a name even if passed in gender is mis-spelled if its >= 4 and starts with the correct letter', function(done) {
+                    let result = person.names.firstName('femael');
+
+                    result.should.not.equal(null);
+                    result.should.not.equal(undefined);
+                    done();
+                });
+
+            });
+
         });
 
         describe('lastName', function() {

@@ -33,25 +33,30 @@ describe('BOOLEAN', function () {
 
     describe('coinflip', function () {
         it('should return a side of a coin (heads, tails)', function (done) {
-            let result = boolean.coinFlip();
+            let result;
             let expected = [ 'heads', 'tails' ];
 
-            result.should.be.a('string');
-            expected.should.include(result);
-            result = boolean.coinFlip();
-            expected.should.include(result);
+            for (var i = 0; i < 10; i++)
+            {
+                result = boolean.coinFlip();
+                result.should.be.a('string');
+                expected.should.include(result);
+            }
+
             done();
         });
     });
 
     describe('bit', function () {
         it('should return a bit value', function (done) {
-            let result = boolean.bit();
+            let result;
 
-            result.should.be.a('number');
-            result.should.be.within(0, 1);
-            result = boolean.bit();
-            result.should.be.within(0, 1);
+            for (var i = 0; i < 10; i++) {
+                result = boolean.bit();
+                result.should.be.a('number');
+                result.should.be.within(0, 1);
+            }
+
             done();
         });
     });
