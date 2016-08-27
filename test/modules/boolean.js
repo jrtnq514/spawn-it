@@ -38,6 +38,8 @@ describe('BOOLEAN', function () {
 
             result.should.be.a('string');
             expected.should.include(result);
+            result = boolean.coinFlip();
+            expected.should.include(result);
             done();
         });
     });
@@ -47,6 +49,8 @@ describe('BOOLEAN', function () {
             let result = boolean.bit();
 
             result.should.be.a('number');
+            result.should.be.within(0, 1);
+            result = boolean.bit();
             result.should.be.within(0, 1);
             done();
         });

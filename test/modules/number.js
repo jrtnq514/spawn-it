@@ -31,6 +31,34 @@ describe('NUMBER', function () {
                 done();
             });
         });
+
+        describe('array', function () {
+            it('should return an int array of the length entered', function (done) {
+                let length = 9;
+                let result = number.int.array(length);
+
+                result.should.be.an('array');
+                result.length.should.equal(length);
+                for (var i in result) {
+                    result[i].should.be.within(0, 99);
+                }
+                done();
+            });
+
+            it('should return an int array of the length entered and int between min and max', function (done) {
+                let length = 9;
+                let min = 0;
+                let max = 50;
+                let result = number.int.array(length, min, max);
+
+                result.should.be.an('array');
+                result.length.should.equal(length);
+                for (var i in result) {
+                    result[i].should.be.within(min, max);
+                }
+                done();
+            });
+        });
     });
 
     describe('decimal', function () {
