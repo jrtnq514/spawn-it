@@ -148,13 +148,30 @@ var myRandomInt = spawnNumber.int.between(-10, 10);
   * names 
     * first name
     ```javascript
-    spawn.string.names.firstName(gender)
+    spawn.person.names.firstName(gender)
     ```
     * last name
     ```javascript
-    spawn.string.names.lastName()
+    spawn.person.names.lastName()
     ```
 * Text
+  * char
+  ```javascript
+    spawn.text.char([case])
+    ```
+  * string
+    * between
+    ```javascript
+    spawn.text.string.between(min, max)
+    ```
+    * ofLength
+    ```javascript
+    spawn.text.string.ofLength(length)
+    ```
+    * random
+    ```javascript
+    spawn.text.string.random()
+    ```
   * utility 
     * capitalizeFirst
     ```javascript
