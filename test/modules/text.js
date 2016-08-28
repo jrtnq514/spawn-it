@@ -1,8 +1,9 @@
 /**
  * Created by JT on 8/25/16.
  */
-var should = require('chai').should();
-var expect = require('chai').expect;
+var chai = require('chai'),
+    should = chai.should(),
+    expect = chai.expect;
 
 // module to test
 var text = require('./../../lib/modules/text');
@@ -41,6 +42,39 @@ describe('TEXT', function () {
             result.should.equal(resultUpper);
             expectedChars.should.include(result);
             done();
+        });
+    });
+
+    describe('string', function () {
+
+        describe('between', function () {
+            it('should return a string between the min and max length', function (done) {
+                let result = text.string.between(10, 20);
+
+                result.should.be.a('string');
+                result.length.should.be.within(10, 20);
+                done();
+            });
+        });
+
+        describe('ofLength', function () {
+            it('should return a string of the provided length', function (done) {
+                let result = text.string.ofLength(15);
+
+                result.should.be.a('string');
+                result.length.should.equal(15);
+                done();
+            });
+        });
+
+        describe('random', function () {
+            it('should return a string between the boundaries (2, 100)', function (done) {
+                let result = text.string.random();
+
+                result.should.be.a('string');
+                result.length.should.be.within(2, 100);
+                done();
+            });
         });
     });
 
