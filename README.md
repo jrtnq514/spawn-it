@@ -1,4 +1,5 @@
-# spawn-it
+![spawn-it logo](https://cdn.rawgit.com/jrtnq514/spawn-it/master/spawn-it.svg)
+
 [![Build Status](https://travis-ci.org/jrtnq514/spawn-it.svg?branch=master)](https://travis-ci.org/jrtnq514/spawn-it)
 [![Coverage Status](https://coveralls.io/repos/github/jrtnq514/spawn-it/badge.svg?branch=master)](https://coveralls.io/github/jrtnq514/spawn-it?branch=master)
 
