@@ -6,8 +6,43 @@ var expect = require('chai').expect;
 
 // module to test
 var text = require('./../../lib/modules/text');
+var textConfig = require('./../../lib/modules/config/text');
 
 describe('TEXT', function () {
+
+    describe('char', function () {
+
+        it('should return a char', function (done) {
+            let result = text.char();
+            let expectedChars = textConfig.chars;
+
+            result.should.be.a('string');
+            expectedChars.should.include(result);
+            done();
+        });
+        
+        it('should return a lowercase char', function (done) {
+            let result = text.char('lower');
+            let resultLower = result.toLowerCase();
+            let expectedChars = textConfig.chars;
+
+            result.should.be.a('string');
+            result.should.equal(resultLower);
+            expectedChars.should.include(result);
+            done();
+        });
+
+        it('should return a uppercase char', function (done) {
+            let result = text.char('upper');
+            let resultUpper = result.toUpperCase();
+            let expectedChars = textConfig.chars.toUpperCase();
+
+            result.should.be.a('string');
+            result.should.equal(resultUpper);
+            expectedChars.should.include(result);
+            done();
+        });
+    });
 
     describe('utility', function() {
 
