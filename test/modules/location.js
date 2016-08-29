@@ -13,12 +13,24 @@ describe('LOCATION', function() {
 
     describe('city', function() {
 
-        it('should return a string', function(done) {
-            var city = location.city('MO');
-            expect(city).to.be.a('string');
-            expect(city).to.not.equal(null);
-            expect(city).to.not.equal(undefined);
-            done();
+        describe('with state code', function() {
+            it('should return a string', function(done) {
+                var city = location.city('MO');
+                expect(city).to.be.a('string');
+                expect(city).to.not.equal(null);
+                expect(city).to.not.equal(undefined);
+                done();
+            });
+        });
+
+        describe('without state code', function() {
+            it('should return a string', function(done) {
+                var city = location.city();
+                expect(city).to.be.a('string');
+                expect(city).to.not.equal(null);
+                expect(city).to.not.equal(undefined);
+                done();
+            });
         });
 
     });
