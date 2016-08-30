@@ -181,6 +181,7 @@ var myRandomInt = spawnNumber.int.between(-10, 10);
 ###Contributors
 [Josh Taylor](https://github.com/jrtnq514)  
 [Nathan Francy](https://github.com/nathanfrancy)  
+[Dylan Stanfield](https://github.com/dylanstanfield)
 
 ###License
 [MIT](https://github.com/jrtnq514/spawn-it/blob/master/LICENSE)
