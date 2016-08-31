@@ -51,6 +51,7 @@
     "mocha": "^3.0.2"
   },
   "dependencies": {
+    "clone": "^1.0.2",
     "moment": "^2.14.1",
     "randomcolor": "^0.4.4"
   }
