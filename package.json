@@ -36,7 +36,10 @@
     "data",
     "test",
     "fake",
-    "prototype"
+    "prototype",
+    "location",
+    "color",
+    "gps"
   ],
   "author": "jrtnq514",
   "license": "MIT",
