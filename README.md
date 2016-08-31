@@ -39,23 +39,49 @@ var myRandomInt = spawnNumber.int.between(-10, 10);
 ```
 
 ###Spawnable Data
-* Boolean
-  * simple
-  ```javascript
-  spawn.boolean.simple()
-  ```
-  * array
-  ```javascript
-  spawn.boolean.array(length)
-  ```
-  * coin flip
-  ```javascript
-  spawn.boolean.coinFlip()
-  ```
-  * bit
-  ```javascript
-  spawn.boolean.bit()
-  ```
+#### Boolean
+```javascript
+var spawn = require('spawn-it');
+
+// simple - returns true or false
+var randomBool = spawn.boolean.simple();
+
+// array - returns an array of values (true or false) for a given length
+var randomBools = spawn.boolean.array(length);
+
+// coin flip - returns "heads" or "tails"
+var randomSide = spawn.boolean.coinFlip();
+
+// bit - returns 1 or 0
+var randomBit = spawn.boolean.bit();
+    
+```
+
+#### Date
+```javascript
+var spawn = require('spawn-it');
+
+// weekday
+    // name
+    spawn.date.weekday.name();
+    
+    // abbr
+    spawn.date.weekday.abbr()
+    
+    // number
+    spawn.date.weekday.number()
+    
+    // allNames
+    spawn.date.weekday.allNames()
+    
+    // allAbbrs
+    spawn.date.weekday.allAbbr()
+    
+// month
+
+    
+```
+
 * Date
   * weekday
     * name
