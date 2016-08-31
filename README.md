@@ -57,6 +57,38 @@ var randomBit = spawn.boolean.bit();
     
 ```
 
+#### Color
+```javascript
+var spawn = require('spawn-it');
+
+// simple - returns a random color (hex)
+var randomColor = spawn.color.simple();
+
+// array - returns an array of random colors (hex)
+var randomColors = spawn.color.array(length);
+
+// hue
+  // simple
+  var randomHueColor = spawn.color.hue(hue).simple();
+  
+  // array
+  var randomHueColors = spawn.color.hue(hue).array(length);
+    
+// luminosity
+  // simple
+  var randomLuminosityColor = spawn.color.luminosity(luminosity).simple();
+  
+  // array
+  var randomLuminosityColors = spawn.color.luminosity(luminosity).array(length);
+  
+//hue and luminosity
+  // simple
+  var randomHueAndLuminosityColor = spawn.color.hueAndLuminosity(hue, luminosity).simple();
+  
+  // array
+  var randomHueAndLuminosityColors = spawn.color.hueAndLuminosity(hue, luminosity).array(length);
+```
+
 #### Date
 ```javascript
 var spawn = require('spawn-it');
