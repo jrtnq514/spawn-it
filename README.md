@@ -63,146 +63,109 @@ var spawn = require('spawn-it');
 
 // weekday
     // name
-    spawn.date.weekday.name();
+    var randomWeekday = spawn.date.weekday.name();
     
     // abbr
-    spawn.date.weekday.abbr()
+    var randomWeekday = spawn.date.weekday.abbr();
     
     // number
-    spawn.date.weekday.number()
+    var randomWeekday = spawn.date.weekday.number();
     
     // allNames
-    spawn.date.weekday.allNames()
+    var randomWeekday = spawn.date.weekday.allNames();
     
     // allAbbrs
-    spawn.date.weekday.allAbbr()
+    var randomWeekday = spawn.date.weekday.allAbbr();
     
 // month
-
+    // name
+    var randomMonth = spawn.date.month.name();
     
+    // abbr
+    var randomMonth = spawn.date.month.abbr();
+    
+    // number
+    var randomMonth = spawn.date.month.number();
+    
+    // allNames
+    var randomMonth = spawn.date.month.allNames();
+    
+    // allAbbrs
+    var randomMonth = spawn.date.month.allAbbr();
+    
+// year
+    // full
+    var randomYear = spawn.date.year.full(min, max);
+    
+    // short
+    var randomYear = spawn.date.year.short();
+    
+// decade
+    // full
+    var randomDecade = spawn.date.decade.full();
+    
+    // short
+    var randomDecade = spawn.date.decade.short();
+    
+    // name
+    var randomDecade = spawn.date.decade.name();
+```
+#### Number
+```javascript
+var spawn = require('spawn-it');
+
+// int
+    // between
+    var randomInt = spawn.number.int.between(min, max);
+    
+    // ofLength
+    var randomInt = spawn.number.int.ofLength(length);
+    
+    // array
+    var randomInts = spawn.number.int.array(length, intMin, intMax)
+    
+// decimal
+    // between
+    var randomDecimal = spawn.number.decimal.between(min, max, precision, asString);
+    
+    // ofLength
+    var randomDecimal = spawn.number.decimal.ofLength(length, precision, asString);
+
 ```
 
-* Date
-  * weekday
-    * name
-    ```javascript
-    spawn.date.weekday.name()
-    ```
-    * abbr
-    ```javascript
-    spawn.date.weekday.abbr()
-    ```
-    * number
-    ```javascript
-    spawn.date.weekday.number()
-    ```
-    * allNames
-    ```javascript
-    spawn.date.weekday.allNames()
-    ```
-    * allAbbr
-    ```javascript
-    spawn.date.weekday.allAbbr()
-    ```
-  * month
-    * name
-    ```javascript
-    spawn.date.month.name()
-    ```
-    * abbr
-    ```javascript
-    spawn.date.month.abbr()
-    ```
-    * number
-    ```javascript
-    spawn.date.month.number()
-    ```
-    * allNames
-    ```javascript
-    spawn.date.month.allNames()
-    ```
-    * allAbbr
-    ```javascript
-    spawn.date.month.allAbbr()
-    ```
-  * year
-    * full
-    ```javascript
-    spawn.date.year.full([min, max])
-    ```
-    * short
-    ```javascript
-    spawn.date.year.short()
-    ```
-  * decade
-    * full
-    ```javascript
-    spawn.date.decade.full()
-    ```
-    * short
-    ```javascript
-    spawn.date.decade.short()
-    ```
-    * name
-    ```javascript
-    spawn.date.decade.name()
-    ```
-* Number
-  * int
-    * between 
-    ```javascript
-    spawn.number.int.between(min, max)
-    ```
-    * ofLength
-    ```javascript
-    spawn.number.int.ofLength(length)
-    ```
-    * array
-    ```javascript
-    spawn.number.int.array(length[, intMin, intMax])
-    ```
-  * decimal (NOTE: If not returned as string trailing 0's will be removed)
-    * between
-    ```javascript
-    spawn.number.decimal.between(min, max, precision[, toString])
-    ```
-    * ofLength
-    ```javascript
-    spawn.number.decimal.ofLength(length, precision[, toString])
-    ```
-* Person
-  * names 
-    * first name
-    ```javascript
-    spawn.person.names.firstName(gender)
-    ```
-    * last name
-    ```javascript
-    spawn.person.names.lastName()
-    ```
-* Text
-  * char
-  ```javascript
-    spawn.text.char([case])
-    ```
-  * string
-    * between
-    ```javascript
-    spawn.text.string.between(min, max)
-    ```
-    * ofLength
-    ```javascript
-    spawn.text.string.ofLength(length)
-    ```
-    * random
-    ```javascript
-    spawn.text.string.random()
-    ```
-  * utility 
-    * capitalizeFirst
-    ```javascript
-    spawn.text.utility.capitalizeFirst(string[, toLowerBefore)
-    ```
+#### Person
+```javascript
+var spawn = require('spawn-it');
+
+// names
+    // first name
+    var randomFirstName = spawn.person.names.firstName(gender);
+    
+    // last name
+    var randomLastName = spawn.person.names.lastName();
+
+```
+#### Text
+```javascript
+var spawn = require('spawn-it');
+
+// char - case is optional
+var randomChar = spawn.text.char(case);
+
+// string
+    // between
+    var randomString = spawn.text.string.between(min, max);
+    
+    // ofLength
+    var randomString = spawn.text.string.ofLength(length);
+    
+    // random
+    var randomString = spawn.text.string.random();
+    
+// utility
+  // capitalizeFirst
+  spawn.text.utility.capitalizeFirst(string, toLowerBefore)
+```
     
 ###Contributors
 [Josh Taylor](https://github.com/jrtnq514)  
