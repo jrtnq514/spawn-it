@@ -68,25 +68,25 @@ var randomColor = spawn.color.simple();
 var randomColors = spawn.color.array(length);
 
 // hue
-  // simple
-  var randomHueColor = spawn.color.hue(hue).simple();
-  
-  // array
-  var randomHueColors = spawn.color.hue(hue).array(length);
+    // simple
+    var randomHueColor = spawn.color.hue(hue).simple();
+    
+    // array
+    var randomHueColors = spawn.color.hue(hue).array(length);
     
 // luminosity
-  // simple
-  var randomLuminosityColor = spawn.color.luminosity(luminosity).simple();
-  
-  // array
-  var randomLuminosityColors = spawn.color.luminosity(luminosity).array(length);
+    // simple
+    var randomLuminosityColor = spawn.color.luminosity(luminosity).simple();
+    
+    // array
+    var randomLuminosityColors = spawn.color.luminosity(luminosity).array(length);
   
 //hue and luminosity
-  // simple
-  var randomHueAndLuminosityColor = spawn.color.hueAndLuminosity(hue, luminosity).simple();
+    // simple
+    var randomHueAndLuminosityColor = spawn.color.hueAndLuminosity(hue, luminosity).simple();
   
-  // array
-  var randomHueAndLuminosityColors = spawn.color.hueAndLuminosity(hue, luminosity).array(length);
+    // array
+    var randomHueAndLuminosityColors = spawn.color.hueAndLuminosity(hue, luminosity).array(length);
 ```
 
 #### Date
@@ -175,6 +175,10 @@ var spawn = require('spawn-it');
     
     // last name
     var randomLastName = spawn.person.names.lastName();
+    
+// attributes
+    // age
+    var randomAge = spawn.person.attributes.age([min, max]);
 
 ```
 #### Text
