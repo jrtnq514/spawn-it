@@ -143,6 +143,24 @@ describe('DATE', function () {
                 result.should.be.within(min, max);
                 done();
             });
+
+            it('should return an error due to invalid year range', function (done) {
+                let min = 0;
+                let max = 3001;
+                let full;
+
+                date.year.full.bind(full, min, max).should.throw('Invalid year range. Must be between 1 and 3000.');
+                done();
+            });
+
+            it('should return an error due to invalid year range', function (done) {
+                let min = 2000;
+                let max = 1991;
+                let full;
+
+                date.year.full.bind(full, min, max).should.throw('Invalid year range. Max must be greater than min.');
+                done();
+            });
         });
 
         describe('short', function () {

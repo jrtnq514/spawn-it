@@ -21,6 +21,17 @@ describe('GPS', function () {
             done();
         });
 
+        it('should return a stream of gps sentences with the given messageTypes', function (done) {
+            let length = 25;
+            let messageTypes = [ 'GGA', 'GSA' ];
+            let result = gps.stream(length, messageTypes);
+
+            result.should.be.a('string');
+            let numberOfSentences = result.split('\r\n');
+            numberOfSentences.length.should.equal(length);
+            done();
+        });
+
     });
 
     describe('GGA', function () {
