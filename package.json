@@ -1,6 +1,6 @@
 {
   "name": "spawn-it",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A Node package for spawning random data.",
   "main": "lib/index.js",
   "engines": {
