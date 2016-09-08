@@ -18,8 +18,8 @@ $ npm install spawn-it
 ```javascript
 var spawn = require('spawn-it');
 
-var studentFirstName = spawn.string.names.firstName('male');
-var studentLastName = spawn.string.names.lastName();
+var studentFirstName = spawn.person.names.firstName('male');
+var studentLastName = spawn.person.names.lastName();
 var gradePercentage = spawn.number.int.between(0, 100);
 
 var test = {
