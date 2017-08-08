@@ -5,16 +5,16 @@
 
 [Spawn-it](https://github.com/jrtnq514/spawn-it) is a node package for spawning random data.
 
-###Installation
+### Installation
 ```javascript
 $ npm install spawn-it
 ```
-###Features
+### Features
 * Easy to use
 * Readable syntax
 
-###Usage
-####Example
+### Usage
+#### Example
 ```javascript
 var spawn = require('spawn-it');
 
@@ -30,7 +30,7 @@ var test = {
   percentage: gradePercentage
 };
 ```
-####Only need a single module?
+#### Only need a single module?
 Sometimes you only need part of the functionality. Spawn-it lets you do that.
 ```javascript
 var spawnNumber = require('spawn-it').number;
@@ -38,7 +38,7 @@ var spawnNumber = require('spawn-it').number;
 var myRandomInt = spawnNumber.int.between(-10, 10);
 ```
 
-###Spawnable Data
+### Spawnable Data
 #### Boolean
 ```javascript
 var spawn = require('spawn-it');
@@ -203,10 +203,10 @@ var randomChar = spawn.text.char(case);
   spawn.text.utility.capitalizeFirst(string, toLowerBefore)
 ```
     
-###Contributors
+### Contributors
 [Josh Taylor](https://github.com/jrtnq514)  
 [Nathan Francy](https://github.com/nathanfrancy)  
 [Dylan Stanfield](https://github.com/dylanstanfield)
 
-###License
+### License
 [MIT](https://github.com/jrtnq514/spawn-it/blob/master/LICENSE)
